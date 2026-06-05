@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1f2937;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+.navbar-brand {
+  font-size: 27px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+.nav-link:hover {
+  color: #2563eb !important;
+}
+
+.nav-btn {
+  border-radius: 25px;
+  padding: 8px 20px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 22px 0;
+  color: #eef6ff;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover,
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.hero-img {
+  border-radius: 22px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.section-title p {
+  color: #6b7280;
+  font-size: 17px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.feature-card,
+.testimonial-card,
+.pricing-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover,
+.testimonial-card:hover,
+.pricing-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 35px rgba(37, 99, 235, 0.18);
+}
+
+.icon-box {
+  width: 55px;
+  height: 55px;
+  background: #eaf1ff;
+  color: #2563eb;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+
+.feature-card h4 {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.pricing-card {
+  position: relative;
+}
+
+.pricing-card h3 {
+  font-weight: 700;
+}
+
+.pricing-card h2 {
+  color: #2563eb;
+  font-weight: 700;
+  margin: 18px 0;
+}
+
+.pricing-card h2 span {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.pricing-card li {
+  margin-bottom: 12px;
+  color: #4b5563;
+}
+
+.featured {
+  border: 2px solid #2563eb;
+  transform: scale(1.03);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -14px;
+  right: 25px;
+  background: #2563eb;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.testimonial-card p {
+  color: #4b5563;
+  font-style: italic;
+}
+
+.testimonial-card h6 {
+  color: #2563eb;
+  margin-top: 18px;
+  font-weight: 600;
+}
+
+.accordion {
+  max-width: 850px;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #eaf1ff;
+  color: #2563eb;
+}
+
+.contact-form {
+  max-width: 650px;
+  display: grid;
+  gap: 15px;
+}
+
+.form-control {
+  padding: 13px;
+  border-radius: 12px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #2563eb;
+}
+
+footer {
+  background: #111827;
+  color: white;
+  padding: 45px 0;
+}
+
+footer h4 {
+  font-weight: 700;
+}
+
+footer p {
+  color: #d1d5db;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero {
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-img {
+    margin-top: 35px;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured {
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .section-padding {
+    padding: 55px 0;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  .pricing-card,
+  .feature-card,
+  .testimonial-card {
+    padding: 24px;
+  }
+
+  .navbar-brand {
+    font-size: 23px;
+  }
+}
