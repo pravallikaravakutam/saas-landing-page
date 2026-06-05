@@ -96,10 +96,3 @@ Through this project, I learned:
 * Mobile-First Development
 * Modern Color Combinations
 
-## Author
-
-Pravallika Ravakutam
-
-## Date
-
-Phase 2 - Day 2 Task
